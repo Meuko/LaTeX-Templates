@@ -5,3 +5,6 @@ This repository contains multiple LaTeX templates which can be used to quickly c
 - **[Essay]** _Template type._
   - **Essay** _Contains the document's contents, the document's header file and a core file with references to all the documents._
   - **LaTeX** _Contains all the compiled documents, this is where you'll find the PDF._
+
+QoL compilation can be done (in vim) using the following command:  
+```autocmd FileType tex nmap <buffer> <C-p> :w<CR>:!xelatex -output-directory=../LaTeX %<CR><CR>```
